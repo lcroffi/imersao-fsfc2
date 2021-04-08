@@ -4,11 +4,11 @@ services:
   
   app:
     build: .
-    entrypoint: ./.docker/entrypoint.sh
     ports: 
       - 3000:3000
     volumes:
       - .:/home/node/app
+    command: npm run start:dev
     depends_on:
       - db
   
