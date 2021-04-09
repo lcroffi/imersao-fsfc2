@@ -4,7 +4,7 @@ services:
   
   app:
     build: .
-    entrypoint: ./.docker/entrypoint.sh
+    command: npm start
     ports: 
       - 3001:3000
     volumes:
